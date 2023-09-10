@@ -1,0 +1,27 @@
+.card {
+  background-color: wheat;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow here */
+  border-radius: 1rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+.my-grid {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.pending {
+  color: grey;
+}
+.correct {
+  color: green;
+  font-weight: bold;
+}
+.incorrect {
+  color: red;
+}
