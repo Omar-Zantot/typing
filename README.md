@@ -1,27 +1,59 @@
-# Typing
+# Typing Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+A fun and interactive typing challenge project built with Angular.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
 
-## Code scaffolding
+## Introduction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The Typing Challenge project is a web-based typing game that generates a random phrase for users to type. It provides real-time feedback on typing accuracy by highlighting correctly typed letters in green, incorrectly typed letters in red, and letters not yet typed in grey.
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[Link to Live Demo](https://typing-pied-eight.vercel.app/) 
 
-## Running unit tests
+![Demo Screenshot](https://github.com/Omar-Zantot/typing/assets/74403682/09b04b9a-0da7-40f6-8000-ad325c1c7a08)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Features
 
-## Further help
+- Randomly generates typing challenges.
+- Real-time feedback on typing accuracy.
+- User-friendly and interactive design.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies
+
+- Angular
+- lorem-ipsum (for generating random text)
+- bulma CSS
+
+## Getting Started
+
+To get started with this project locally, follow these steps:
+
+1. Clone this repository.
+2. Install the necessary dependencies using `npm install`.
+3. Run the development server with `ng serve`.
+4. Open your browser and navigate to `http://localhost:4200/`.
+
+## Usage
+
+- Visit the live demo link (https://typing-pied-eight.vercel.app/).
+- Start typing the generated phrase.
+- See real-time feedback on your accuracy.
+- Try to type the entire phrase perfectly!
+
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
