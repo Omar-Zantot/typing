@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { loremIpsum } from 'lorem-ipsum';
 
 @Component({
@@ -6,16 +6,23 @@ import { loremIpsum } from 'lorem-ipsum';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  randomText = loremIpsum({ count: 7, format: 'plain', units: 'words' });
-  userText = '';
+export class AppComponent implements OnInit {
+  randomText: string = ''
+  userText: string = '';
+  ngOnInit(): void {
+    this.randomText = loremIpsum({ count: 7, format: 'plain', units: 'words' });
+    this.userText = '';
+  }
 
-  userEnterText(event: Event) {
-    const value = (event.target as HTMLInputElement).value;
-    this.userText = value;
+
+  userEnterText(event: any) {
+    this.userText = event.target.value;
   }
   compare(rendomLetter: string, userLetter: string) {
     if (!userLetter) return 'panding';
     return userLetter === rendomLetter ? 'correct' : 'incorrect';
+  }
+  reset() {
+    this.ngOnInit();
   }
 }

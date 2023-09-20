@@ -2,26 +2,28 @@
   <div class="columns my-grid is-centered">
     <div class="box card">
       <h1 class="title has-text-centered">Typing Challenge</h1>
-      <p class="has-text-centered">
+      <p class="has-text-centered mb-0">
         <!-- &  NgFor only supports binding to Iterables, such as Arrays => .split('') -->
 
-        <span
-          [class]="compare(letter, userText[i])"
-          *ngFor="let letter of randomText.split(''); let i = index"
-          >{{ letter }}</span
-        >
+        <span [class]="compare(letter, userText[i])" *ngFor="let letter of randomText.split(''); let i = index">{{
+          letter }}</span>
       </p>
-
+      <div class="m-0 text-start">
+        <span [ngClass]="userText==randomText.slice(0,userText.length)?'correct':'incorrect'">
+          {{userText}}
+        </span>
+      </div>
       <!-- ^ Handling user Input -->
 
       <div class="field">
-        <input type="text" class="input" (input)="userEnterText($event)" />
+        <input type="text" class="input" [(ngModel)]="userText" (input)="userEnterText($event)" />
       </div>
 
       <!-- ^ Conditional Display -->
 
       <div class="box has-text-centered" *ngIf="userText === randomText">
         <h1 class="title">Success</h1>
+        <button class="btn" (click)="reset()">next Chellenge ?</button>
       </div>
     </div>
   </div>
