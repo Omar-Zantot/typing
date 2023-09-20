@@ -2,13 +2,15 @@
   background-color: wheat;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow here */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add shadow here */
   border-radius: 1rem;
 }
 
 p {
   margin-bottom: 0.8rem;
 }
+
 .my-grid {
   display: grid;
   place-content: center;
@@ -18,10 +20,33 @@ p {
 .pending {
   color: grey;
 }
+
 .correct {
   color: green;
   font-weight: bold;
 }
+
 .incorrect {
   color: red;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.btn {
+  background: #f1c3f7;
+  padding: 15px;
+  outline: none;
+  border: none;
+  transition: 0.5s linear;
+}
+
+.btn:hover {
+  box-shadow: 6px 6px 14px #b48db9;
+  border-radius: 8px;
+}
+
+.text-start {
+  text-align: start;
 }
